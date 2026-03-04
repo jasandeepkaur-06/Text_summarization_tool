@@ -1,0 +1,85 @@
+/* Remove default margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling - background and center alignment */
+body {
+    font-family: Arial, Helvetica, sans-serif;   /* Set font */
+    background: linear-gradient(135deg, #667eea, #764ba2);  
+    display: flex;               
+    justify-content: center;    
+    align-items: center;         
+    height: 100vh;               
+}
+
+/* Main container box */
+.container {
+    background: #ffffff;         /* White background */
+    width: 80%;                  
+    max-width: 800px;            /* Maximum width */
+    padding: 30px;               /* Inner spacing */
+    border-radius: 12px;         /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Heading style */
+h1 {
+    text-align: center;          /* Center text */
+    color: #4a2c82;              
+    margin-bottom: 20px;         /* Space below heading */
+}
+
+/* Text area styling */
+textarea {
+    width: 100%;                 /* Full width */
+    height: 150px;               /* Fixed height */
+    padding: 12px;               /* Inner spacing */
+    border-radius: 8px;          /* Rounded corners */
+    border: 2px solid #cccccc;   /* Light grey border */
+    resize: none;                /* Disable resize */
+    font-size: 14px;             /* Text size */
+    transition: 0.3s;            /* Smooth effect */
+}
+
+/* Text area effect when user clicks inside */
+textarea:focus {
+    border-color: #667eea;       /* Change border color */
+    outline: none;               /* Remove default outline */
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.5); /* Glow effect */
+}
+
+/* Button styling */
+button {
+    width: 100%;                 
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Button gradient */
+    color: white;                /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;             /* Pointer cursor */
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1.03);      /* Slight zoom effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Summary output box */
+#summary {
+    margin-top: 20px;            
+    padding: 15px;
+    background-color: #f3f0ff;   /* Light purple background */
+    border-left: 5px solid #764ba2; /* Left highlight border */
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333333;
+    min-height: 60px;            /* Minimum height */
+}
